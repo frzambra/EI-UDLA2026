@@ -27,9 +27,8 @@ execute:
 ## El Arco de la Investigación {auto-animate="true"}
 
 <div class="timeline-row" data-id="tl-row">
-  <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div><div class="node-label" data-id="label-origin">Origen</div><div class="node-years">2000–2007</div></div>
-  <div class="timeline-node node-past" data-id="node-past"><div class="node-dot" data-id="dot-past"></div><div class="node-label" data-id="label-past">Fundamento</div><div class="node-years">2014–2017</div></div>
-  <div class="timeline-node node-present" data-id="node-present"><div class="node-dot" data-id="dot-present"></div><div class="node-label" data-id="label-present">Deep-Dive</div><div class="node-years">2018–2025</div></div>
+  <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div><div class="node-label" data-id="label-origin">Origen</div><div class="node-years">2007–2017</div></div>
+  <div class="timeline-node node-present" data-id="node-present"><div class="node-dot" data-id="dot-present"></div><div class="node-label" data-id="label-present">Inmersión</div><div class="node-years">2018–2025</div></div>
   <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div><div class="node-label" data-id="label-future">Visión</div><div class="node-years">2025–</div></div>
 </div>
 
@@ -58,7 +57,10 @@ Timer: 0:45
 <p class="visit-caption">Pasantías doctorales de investigación</p>
 
 <br></br>
-<p class="origin-text" style="text-align:left;">Zambrano et al. (2018), *Remote Sensing of Environment* 219, 15–30. [https://doi.org/10.1016/j.rse.2018.10.006](https://doi.org/10.1016/j.rse.2018.10.006)</p>
+**Sequía vs déficit hídrico:**  
+
+* Parecido pero no lo mismo, usualmente confundido.
+
 </div>
 <div>
 ```{python}
@@ -117,11 +119,16 @@ plt.show()
 ```
 <p class="fig-caption-sm">Datos climáticos y de rendimiento: escasos, dispersos e incompletos</p>
 
-<div class="origin-callouts">
-**Sequía vs déficit hídrico:**  
 
-* Parecido pero no lo mismo, usualmente confundido.
-* Dos escalas: ¿impacto del clima en la agricultura? ¿Qué hacemos?
+<div class="origin-text">
+<br><br>
+
+* Dos escalas: nacional (Chile) y local (huerto)
+*¿impacto del clima en la agricultura? ¿Qué hacemos?
+
+</div>
+
+<div class="origin-callouts">
 
 </div>
 </div>
@@ -129,7 +136,6 @@ plt.show()
 
 <div class="timeline-row timeline-row--mini" data-id="tl-row">
   <div class="timeline-node node-origin is-active" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
-  <div class="timeline-node node-past" data-id="node-past"><div class="node-dot" data-id="dot-past"></div></div>
   <div class="timeline-node node-present" data-id="node-present"><div class="node-dot" data-id="dot-present"></div></div>
   <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div></div>
 </div>
@@ -140,11 +146,16 @@ Timer: 1:00
 
 ## Primer Marco de Trabajo {auto-animate="true"}
 
-![](images/marco_teorico_inicial.png){fig-align='center'}
+![](images/marco_teorico_inicial.png){fig-align='center' width="100%"}
+
+<div class="callout-box">
+<strong>Key Insight:</strong> Regresión óptima y deep learning predicen la productividad agrícola con R²=0.95–0.96 un mes antes del fin de temporada — la base de un sistema de alerta temprana.
+</div>
+
+<p class="cite-note" style="text-align:center;">Zambrano et al. (2018), *Remote Sensing of Environment* 219, 15–30. <a href="https://doi.org/10.1016/j.rse.2018.10.006">doi.org/10.1016/j.rse.2018.10.006</a></p>
 
 <div class="timeline-row timeline-row--mini" data-id="tl-row">
-  <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
-  <div class="timeline-node node-past is-active" data-id="node-past"><div class="node-dot" data-id="dot-past"></div></div>
+  <div class="timeline-node node-origin is-active" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
   <div class="timeline-node node-present" data-id="node-present"><div class="node-dot" data-id="dot-present"></div></div>
   <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div></div>
 </div>
@@ -157,7 +168,6 @@ Timer: 1:00
 
 <div class="timeline-row" data-id="tl-row">
   <div class="timeline-node node-origin" data-id="node-origin" style="opacity:0.15;"><div class="node-dot" data-id="dot-origin"></div></div>
-  <div class="timeline-node node-past" data-id="node-past" style="opacity:0.25;"><div class="node-dot" data-id="dot-past"></div></div>
   <div class="timeline-node node-present is-active" data-id="node-present" style="transform: scale(1.9);"><div class="node-dot" data-id="dot-present"></div><div class="node-label" data-id="label-present">Presente</div></div>
   <div class="timeline-node node-future" data-id="node-future" style="opacity:0.25;"><div class="node-dot" data-id="dot-future"></div></div>
 </div>
@@ -175,40 +185,17 @@ Timer: 1:00
 Timer: 0:30 — la más rápida
 :::
 
-## Abordando la Nueva Frontera {auto-animate="true"}
-
-<div class="workflow-row">
-  <div class="workflow-box"><span class="wf-title">Entrada</span>Datos multi-sensor<br>(satélite + clima)</div>
-  <div class="workflow-arrow">→</div>
-  <div class="workflow-box"><span class="wf-title">Método</span>Modelos de<br>Machine Learning</div>
-  <div class="workflow-arrow">→</div>
-  <div class="workflow-box workflow-output"><span class="wf-title">Salida</span><div class="wf-outcome"><strong>ODES-Chile</strong><span class="wf-code">FSEQ210022 · desde la tesis doctoral</span></div><div class="wf-outcome"><strong>SatOri</strong><span class="wf-code">FONDEF IDeA ID21I10297 · desde la tesis de pregrado</span></div></div>
-</div>
-
-<p class="cite-note" style="text-align:center;">Zambrano et al. (2025), *Agricultural Water Management* 318, 109721 — base científica de SatOri</p>
-
-<div class="timeline-row timeline-row--mini" data-id="tl-row">
-  <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
-  <div class="timeline-node node-past" data-id="node-past"><div class="node-dot" data-id="dot-past"></div></div>
-  <div class="timeline-node node-present is-active" data-id="node-present"><div class="node-dot" data-id="dot-present"></div></div>
-  <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div></div>
-</div>
-
-::: {.notes}
-Timer: 1:15
-:::
 
 ## El Resultado Crítico {auto-animate="true"}
 
 ![](images/aridificacion_ejemplo.png){fig-align='center'}
 
-<p class="result-statement">Esto revela que Chile central transita de una sequía cíclica a una aridificación estructural del paisaje.</p>
+<p class="result-statement">Esto revela que Chile central transita de una sequía cíclica a una aridificación estructural del paisaje — que explica hasta un <strong>78%</strong> de la expansión de matorral y un <strong>40%</strong> del cambio en área forestal.</p>
 
 <p class="cite-note" style="text-align:center;">Zambrano et al. (2025), *Earth's Future* — base científica de ODES-Chile. [https://doi.org/10.1029/2025EF006744](https://doi.org/10.1029/2025EF006744)</p>
 
 <div class="timeline-row timeline-row--mini" data-id="tl-row">
   <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
-  <div class="timeline-node node-past" data-id="node-past"><div class="node-dot" data-id="dot-past"></div></div>
   <div class="timeline-node node-present is-active" data-id="node-present"><div class="node-dot" data-id="dot-present"></div></div>
   <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div></div>
 </div>
@@ -217,21 +204,42 @@ Timer: 1:15
 Timer: 1:15 — clímax
 :::
 
+## Adaptación {auto-animate="true"}
+
+![](images/diagrama_psisat.png){fig-align='center'}
+
+<p class="cite-note" style="text-align:center;">Zambrano et al. (2025), *Agricultural Water Management* 318, 109721 — base científica de SatOri.<a href="https://doi.org/10.1016/j.agwat.2025.109721">https://doi.org/10.1016/j.agwat.2025.109721</a></p>
+
+<div class="timeline-row timeline-row--mini" data-id="tl-row">
+  <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
+  <div class="timeline-node node-present is-active" data-id="node-present"><div class="node-dot" data-id="dot-present"></div></div>
+  <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div></div>
+</div>
+
+::: {.notes}
+Timer: 1:15
+:::
+
 ## Conectando los Puntos {auto-animate="true"}
 
 <div class="venn-wrap">
   <div class="venn-circle venn-past"></div>
   <div class="venn-circle venn-present"></div>
-  <div class="venn-label venn-label-past">Teledetección + estadística espacio-temporal + sequía</div>
-  <div class="venn-label venn-label-present">Machine Learning + sistemas operacionales de monitoreo hídrico</div>
+  <div class="venn-label venn-label-past">Teledetección + estadística espacio-temporal + sequía<span class="venn-sublabel">+ aridificación</span></div>
+  <div class="venn-label venn-label-present">Machine Learning + sistemas operacionales de monitoreo hídrico<span class="venn-sublabel">+ inferencia causal y socio-hidrología</span></div>
   <div class="venn-label venn-label-overlap">Ciencia predictiva y accionable para la adaptación agrícola</div>
 </div>
 
-<p class="arc-stat" style="margin-top: 0.8em;">Hoy, ambos orígenes operan como sistemas de decisión en producción: <strong>ODES-Chile</strong> y <strong>SatOri</strong></p>
+<p class="arc-stat" style="margin-top: 0.8em;">Hoy, ambos orígenes operan como sistemas de decisión en producción:</p>
+<div style="text-align: center;">
+<ul class="arc-stat-list">
+  <li><strong><a href="https://odes-chile.org/">ODES-Chile (https://odes-chile.org/)</a></strong></li>
+  <li><strong><a href="https://s4tori.cl/">SatOri (https://s4tori.cl/)</a></strong></li>
+</ul>
+</div>
 
 <div class="timeline-row timeline-row--mini" data-id="tl-row">
-  <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
-  <div class="timeline-node node-past is-active" data-id="node-past"><div class="node-dot" data-id="dot-past"></div></div>
+  <div class="timeline-node node-origin is-active" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
   <div class="timeline-node node-present is-active" data-id="node-present"><div class="node-dot" data-id="dot-present"></div></div>
   <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div></div>
 </div>
@@ -258,7 +266,9 @@ Financiamiento y publicaciones en curso (2025–2026)
 :::
 
 ::: {.stacked-box .fragment}
-<span class="aim-label">En evaluación</span> **FIA — PsiSat** (CLP 90 MM) <span class="lineage-tag">↳ extiende SatOri</span>
+<span class="aim-label">En evaluación</span>
+<strong>FIA — ΨSat</strong>
+<span class="lineage-tag">↳ extiende SatOri</span>
 :::
 
 </div>
@@ -283,7 +293,6 @@ Financiamiento y publicaciones en curso (2025–2026)
 
 <div class="timeline-row timeline-row--mini" data-id="tl-row">
   <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div></div>
-  <div class="timeline-node node-past" data-id="node-past"><div class="node-dot" data-id="dot-past"></div></div>
   <div class="timeline-node node-present" data-id="node-present"><div class="node-dot" data-id="dot-present"></div></div>
   <div class="timeline-node node-future is-active" data-id="node-future"><div class="node-dot" data-id="dot-future"></div></div>
 </div>

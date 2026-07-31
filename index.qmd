@@ -306,9 +306,11 @@ Timer: 1:00
 <p class="so-what">Mi objetivo es transformar datos satelitales en decisiones que ayuden a Chile a adaptarse a un futuro más seco.</p>
 
 <div class="social-links">
-  <a href="https://github.com/frzambra" class="social-link">GitHub</a>
-  <a href="https://francisco-zambrano.cl" class="social-link">Web</a>
-  <a href="https://orcid.org/0000-0001-6896-8534" class="social-link">ORCID</a>
+  <a href="https://francisco-zambrano.cl" class="social-link">{{< fa globe >}} Web</a>
+  <a href="https://scholar.google.com/citations?user=mKQRdOEAAAAJ&hl=es" class="social-link">{{< fa graduation-cap >}} Google Scholar</a>
+  <a href="https://orcid.org/0000-0001-6896-8534" class="social-link">{{< fa brands orcid >}} ORCID</a>
+  <a href="https://www.linkedin.com/in/frzambra" class="social-link">{{< fa brands linkedin >}} LinkedIn</a>
+  <a href="https://github.com/frzambra" class="social-link">{{< fa brands github >}} GitHub</a>
 </div>
 
 <p class="ack-line">Universidad de Concepción · ITC — Universidad de Twente · CALMIT / NDMC · Centro Hemera — Universidad Mayor · Universidad de Las Américas · ANID</p>

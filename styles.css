@@ -189,9 +189,10 @@
 
 /* Closing acknowledgements (Slide 10) */
 .reveal .ack-line { color: var(--gray-muted); font-size: 0.6em; margin-top: 2em; }
-.reveal .social-links { display: flex; justify-content: center; gap: 1em; margin-top: 1.2em; }
-.reveal .social-link { font-size: 0.55em; padding: 0.35em 1.1em; border: 1px solid var(--accent-teal); border-radius: 999px; color: var(--accent-teal); border-bottom: 1px solid var(--accent-teal); }
+.reveal .social-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.7em; margin-top: 1.2em; }
+.reveal .social-link { display: inline-flex; align-items: center; gap: 0.45em; font-size: 0.55em; padding: 0.35em 1.1em; border: 1px solid var(--accent-teal); border-radius: 999px; color: var(--accent-teal); border-bottom: 1px solid var(--accent-teal); }
 .reveal .social-link::after { content: none; }
+.reveal .social-link svg { height: 1em; width: 1em; fill: currentColor; }
 .reveal .social-link:hover, .reveal .social-link:focus { color: var(--accent-orange); border-color: var(--accent-orange); }
 .reveal .so-what { font-size: 1.15em; font-weight: 700; max-width: 32em; margin: 1em auto; }
 

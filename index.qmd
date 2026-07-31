@@ -29,7 +29,7 @@ execute:
 <div class="timeline-row" data-id="tl-row">
   <div class="timeline-node node-origin" data-id="node-origin"><div class="node-dot" data-id="dot-origin"></div><div class="node-label" data-id="label-origin">Origen</div><div class="node-years">2007–2017</div></div>
   <div class="timeline-node node-present" data-id="node-present"><div class="node-dot" data-id="dot-present"></div><div class="node-label" data-id="label-present">Inmersión</div><div class="node-years">2018–2025</div></div>
-  <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div><div class="node-label" data-id="label-future">Visión</div><div class="node-years">2025–</div></div>
+  <div class="timeline-node node-future" data-id="node-future"><div class="node-dot" data-id="dot-future"></div><div class="node-label" data-id="label-future">Visión</div><div class="node-years">2026–</div></div>
 </div>
 
 <p class="arc-stat">Investigador Responsable de proyectos ANID por <strong>+CLP 1.200 MM</strong> adjudicados</p>
